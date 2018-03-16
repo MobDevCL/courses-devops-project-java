@@ -12,5 +12,5 @@ node {
     sh "./gradlew build"
 
     stage 'Release'
-    archiveArtifacts artifacts: 'build/**/*.apk', fingerprint: true
+    archiveArtifacts artifacts: 'build/**/*.jar', fingerprint: true
 }
